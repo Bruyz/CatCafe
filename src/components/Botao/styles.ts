@@ -3,10 +3,10 @@ import { colors } from "../../styles/colors"
 
 export const styles = StyleSheet.create({
     chapa:{
-        width: 40,
-        height: 50,
-        borderRadius: 20,
-        backgroundColor: colors.green,
-        flexDirection: 'row'
+        width: 81,
+        height: 13,
+        /*borderRadius: 25,*/
+        /*backgroundColor: colors.green,*/
+        flexDirection: 'row',
     }
 })

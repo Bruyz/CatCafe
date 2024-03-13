@@ -1,8 +1,12 @@
-import { TouchableOpacity, TouchableOpacityProps } from "react-native";
+import { Button, TouchableOpacity, TouchableOpacityProps } from "react-native";
 import {styles} from "./styles"
 
-export function Botao(rest:TouchableOpacityProps){
+interface IButton extends TouchableOpacityProps {
+    onPress: () => void;
+}
+    
+export function Botao({onPress}: IButton){
     return(
-        <TouchableOpacity style={styles.chapa} {...rest}/>
+        <TouchableOpacity style={styles.chapa} onPress={onPress}/>
     )
 }
