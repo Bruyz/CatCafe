@@ -12,14 +12,17 @@ export function Tela2({setPage}:IPage) {
                 <Text style={styles.topo2}>VINDO(A)</Text>
             </View>
             <View>
-                <Text style={styles.semitopo}> Sua cafeteria mais fofa, agora mais conectada com você! </Text>
+                <Text style={styles.semitopo}>Sua cafeteria mais fofa, agora mais conectada   com você!</Text>
+            </View>
+            <View style={styles.espaco}>
+
             </View>
             <View style={styles.button}>
-                    <View style={styles.button1}>
-                        <Botao onPress={() => setPage(1)} />
+                    <View style={styles.button}>
+                        <Botao onPress={() => setPage(1)} cor = {false}/>
                     </View> 
-                    <View style={styles.button2}>
-                        <Botao onPress={() => setPage(2)} />
+                    <View style={styles.button}>
+                        <Botao onPress={() => setPage(2)} cor = {true}/>
                     </View> 
             </View>
         </ImageBackground>

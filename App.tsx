@@ -9,6 +9,7 @@ export interface IPage {
 }
 export default function App() {
   const [page,setPage] = useState(1)
+  /*useStat é um hook que muda/controla o estado da aplicação; o setPage altera a variável do useState*/
   const [fontsLoaded] = useFonts({
     RubikMonoOne_400Regular
   });

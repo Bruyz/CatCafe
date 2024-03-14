@@ -9,15 +9,10 @@ export const styles = StyleSheet.create({
         justifyContent: 'center'
     },
 
-    background: {
-        width: 128,
-        height: 128
-    },
-
     centrao: {
+        justifyContent: 'center',
         flexDirection: 'row',
-        alignItems: 'center',
-        
+        alignItems: 'center'
     },
 
     centro1: {
@@ -32,25 +27,11 @@ export const styles = StyleSheet.create({
         color: colors.green
     },
 
-    button: {
-        /*alignItems: 'center',*/
-        /*display: 'flex',*/
+    buttons: {
+        padding: 20,
+        position: 'absolute',
+        bottom: 20,
+        alignItems: 'flex-end',
         flexDirection: 'row',
-        paddingBottom: 30,
-        /*justifyContent: 'flex-end'*/
-    },
-
-    button1: {
-        justifyContent: 'center',  
-        backgroundColor: colors.green,
-        borderRadius: 25
-      },
-  
-      button2: {
-          width: 61,
-          height: 13,
-          justifyContent: 'center',
-          backgroundColor: colors.white,
-          borderRadius: 25
-      }
+    }
 })

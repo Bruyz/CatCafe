@@ -6,14 +6,15 @@ export const styles = StyleSheet.create({
         flex: 1,
     },
     supertopo: {
-        textAlign: 'left',
+        paddingLeft: 10,
         padding: 50,
         flexDirection: 'row',
         justifyContent: 'space-between'
     },
     
     topo: {
-        color: 'white',
+        padding: 0.9,
+        color: colors.white,
         fontSize: 35,
         fontFamily: 'RubikMonoOne_400Regular'
     },
@@ -23,28 +24,19 @@ export const styles = StyleSheet.create({
         fontFamily: 'RubikMonoOne_400Regular'
     },
     semitopo: {
-        color: 'white',
-        fontSize: 29,
+        paddingLeft: 8,
+        color: colors.white,
+        fontSize: 30,
         fontFamily: 'RubikMonoOne_400Regular'
     },
     button: {
-        flexDirection: 'row',
-        paddingBottom: 30,
-        alignItems: 'center',
-    },
-
-    button2: {
-      justifyContent: 'center',  
-      backgroundColor: colors.green,
-      borderRadius: 25
-    },
-
-    button1: {
-        width: 61,
-        height: 13,
         justifyContent: 'center',
-        backgroundColor: colors.white,
-        borderRadius: 25
+        padding: 20,
+        flexDirection: 'row',
+       
+    },
+    
+    espaco: {
+        flex: 2
     }
-
 })
