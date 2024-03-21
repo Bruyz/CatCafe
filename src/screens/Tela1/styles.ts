@@ -27,11 +27,16 @@ export const styles = StyleSheet.create({
         color: colors.green
     },
 
+
     buttons: {
+        justifyContent: 'center',
         padding: 20,
-        position: 'absolute',
-        bottom: 20,
-        alignItems: 'flex-end',
         flexDirection: 'row',
+       
+    },
+
+    espaco: {
+        flex: 2
     }
+    
 })

@@ -14,9 +14,7 @@ export function Tela2({setPage}:IPage) {
             <View>
                 <Text style={styles.semitopo}>Sua cafeteria mais fofa, agora mais conectada   com você!</Text>
             </View>
-            <View style={styles.espaco}>
-
-            </View>
+            <View style={styles.espaco}></View>
             <View style={styles.button}>
                     <View style={styles.button}>
                         <Botao onPress={() => setPage(1)} cor = {false}/>

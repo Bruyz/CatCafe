@@ -6,8 +6,7 @@ export const styles = StyleSheet.create({
         width: 81,
         height: 13,
         borderRadius: 25,
-        backgroundColor: colors.green,
-        flexDirection: 'row',
+        backgroundColor: colors.green
     },
 
     chapaCor: {
