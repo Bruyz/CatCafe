@@ -16,10 +16,10 @@ export function Tela1({setPage}:IPage) {
                             <View style={styles.espaco}></View>
                  <View style={styles.buttons}>
                     <View style={styles.buttons}>
-                        <Botao onPress={() => setPage(1)} cor = {false}/>
+                        <Botao onPress={() => setPage(1)} cor = {true}/>
                     </View> 
                     <View style={styles.buttons}>
-                        <Botao onPress={() => setPage(2)} cor = {true}/>
+                        <Botao onPress={() => setPage(2)} cor = {false}/>
                     </View> 
                 </View>
             </View>
