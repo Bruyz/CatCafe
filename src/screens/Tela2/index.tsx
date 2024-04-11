@@ -1,28 +1,15 @@
-import { ImageBackground, View, Text} from "react-native"
+import { TouchableOpacity, View, Text} from "react-native"
 import { styles } from "./styles"
-import {Botao} from '../../components/Botao'
-import { IPage } from "../../../App"
+import { menuStackTypes } from "../../navigation/MenuStack.navigation"
 
-export function Tela2({setPage}:IPage) {
-    const tela = require('../../assets/cafezin.png')
+
+export function Tela1({ navigation }: MenuStackTypes) {
     return (
-        <ImageBackground style={styles.container} source={tela}>
-            <View style={styles.supertopo}>
-                <Text style={styles.topo}>BEM</Text>
-                <Text style={styles.topo2}>VINDO(A)</Text>
-            </View>
-            <View>
-                <Text style={styles.semitopo}>Sua cafeteria mais fofa, agora mais conectada   com você!</Text>
-            </View>
-            <View style={styles.espaco}></View>
-            <View style={styles.button}>
-                    <View style={styles.button}>
-                        <Botao onPress={() => setPage(1)} cor = {false}/>
-                    </View> 
-                    <View style={styles.button}>
-                        <Botao onPress={() => setPage(2)} cor = {true}/>
-                    </View> 
-            </View>
-        </ImageBackground>
-    )
+        <View style={styles.container}>
+            <Text style={styles.texto}>Tela2</Text>
+            <TouchableOpacity style={styles.botao} onPress={() => navigation.push("Tela1")}>
+            <Text>Tela2</Text>
+            </TouchableOpacity>
+        </View>
+    )        
 }

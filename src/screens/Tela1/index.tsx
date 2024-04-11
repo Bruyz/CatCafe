@@ -1,27 +1,15 @@
-import { Image, View, Text} from "react-native"
+import { TouchableOpacity, View, Text} from "react-native"
 import { styles } from "./styles"
-import { Botao } from '../../components/Botao'
-import { IPage } from "../../../App"
+import { menuStackTypes } from "../../navigation/MenuStack.navigation"
 
-export function Tela1({setPage}:IPage) {
-    const logo = require('../../assets/icon.png')
+
+export function Tela1({ navigation }: MenuStackTypes) {
     return (
-            <View style={styles.container}>
-                      <View style={styles.espaco}></View>
-                       <Image  source={logo}/>
-                            <View style={styles.centrao}>
-                                <Text style={styles.centro1}>Cat</Text>
-                                <Text style={styles.centro2}>Café</Text>
-                            </View>
-                            <View style={styles.espaco}></View>
-                 <View style={styles.buttons}>
-                    <View style={styles.buttons}>
-                        <Botao onPress={() => setPage(1)} cor = {true}/>
-                    </View> 
-                    <View style={styles.buttons}>
-                        <Botao onPress={() => setPage(2)} cor = {false}/>
-                    </View> 
-                </View>
-            </View>
+        <View style={styles.container}>
+            <Text style={styles.texto}>Tela1</Text>
+            <TouchableOpacity style={styles.botao} onPress={() => navigation.push("Tela2")}>
+            <Text>Tela2</Text>
+            </TouchableOpacity>
+        </View>
     )        
 }
